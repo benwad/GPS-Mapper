@@ -16,6 +16,9 @@
 		C95767E61510EF5400BEBBB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95767E51510EF5400BEBBB3 /* ViewController.m */; };
 		C95767E91510EF5400BEBBB3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95767E71510EF5400BEBBB3 /* ViewController_iPhone.xib */; };
 		C95767EC1510EF5400BEBBB3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95767EA1510EF5400BEBBB3 /* ViewController_iPad.xib */; };
+		C95767F71510F32000BEBBB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95767F61510F32000BEBBB3 /* CoreLocation.framework */; };
+		C95767FA1510F32600BEBBB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95767F91510F32600BEBBB3 /* MapKit.framework */; };
+		C95767FD1510F4D000BEBBB3 /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C95767FC1510F4D000BEBBB3 /* GPSManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,10 @@
 		C95767E51510EF5400BEBBB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C95767E81510EF5400BEBBB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		C95767EB1510EF5400BEBBB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		C95767F61510F32000BEBBB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C95767F91510F32600BEBBB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C95767FB1510F4D000BEBBB3 /* GPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSManager.h; sourceTree = "<group>"; };
+		C95767FC1510F4D000BEBBB3 /* GPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95767FA1510F32600BEBBB3 /* MapKit.framework in Frameworks */,
+				C95767F71510F32000BEBBB3 /* CoreLocation.framework in Frameworks */,
 				C95767D31510EF5400BEBBB3 /* UIKit.framework in Frameworks */,
 				C95767D51510EF5400BEBBB3 /* Foundation.framework in Frameworks */,
 				C95767D71510EF5400BEBBB3 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +61,8 @@
 		C95767C31510EF5400BEBBB3 = {
 			isa = PBXGroup;
 			children = (
+				C95767F91510F32600BEBBB3 /* MapKit.framework */,
+				C95767F61510F32000BEBBB3 /* CoreLocation.framework */,
 				C95767D81510EF5400BEBBB3 /* GPSMapper */,
 				C95767D11510EF5400BEBBB3 /* Frameworks */,
 				C95767CF1510EF5400BEBBB3 /* Products */,
@@ -86,6 +97,8 @@
 				C95767E71510EF5400BEBBB3 /* ViewController_iPhone.xib */,
 				C95767EA1510EF5400BEBBB3 /* ViewController_iPad.xib */,
 				C95767D91510EF5400BEBBB3 /* Supporting Files */,
+				C95767FB1510F4D000BEBBB3 /* GPSManager.h */,
+				C95767FC1510F4D000BEBBB3 /* GPSManager.m */,
 			);
 			path = GPSMapper;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 				C95767DF1510EF5400BEBBB3 /* main.m in Sources */,
 				C95767E31510EF5400BEBBB3 /* AppDelegate.m in Sources */,
 				C95767E61510EF5400BEBBB3 /* ViewController.m in Sources */,
+				C95767FD1510F4D000BEBBB3 /* GPSManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +300,7 @@
 				C95767F11510EF5400BEBBB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

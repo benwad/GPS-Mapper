@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize mapView=_mapView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,6 +35,13 @@
     } else {
         return YES;
     }
+}
+
+- (void)dealloc
+{
+    [_mapView release];
+    
+    [super dealloc];
 }
 
 @end

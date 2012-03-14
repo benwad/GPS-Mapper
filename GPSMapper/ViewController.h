@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface ViewController : UIViewController
+{
+    MKMapView *_mapView;
+}
+
+@property (nonatomic, retain) IBOutlet MKMapView *mapView;
 
 @end
