@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C95767D31510EF5400BEBBB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95767D21510EF5400BEBBB3 /* UIKit.framework */; };
+		C95767D51510EF5400BEBBB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95767D41510EF5400BEBBB3 /* Foundation.framework */; };
+		C95767D71510EF5400BEBBB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95767D61510EF5400BEBBB3 /* CoreGraphics.framework */; };
+		C95767DD1510EF5400BEBBB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C95767DB1510EF5400BEBBB3 /* InfoPlist.strings */; };
+		C95767DF1510EF5400BEBBB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C95767DE1510EF5400BEBBB3 /* main.m */; };
+		C95767E31510EF5400BEBBB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95767E21510EF5400BEBBB3 /* AppDelegate.m */; };
+		C95767E61510EF5400BEBBB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95767E51510EF5400BEBBB3 /* ViewController.m */; };
+		C95767E91510EF5400BEBBB3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95767E71510EF5400BEBBB3 /* ViewController_iPhone.xib */; };
+		C95767EC1510EF5400BEBBB3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95767EA1510EF5400BEBBB3 /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C95767CE1510EF5400BEBBB3 /* GPSMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95767D21510EF5400BEBBB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C95767D41510EF5400BEBBB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C95767D61510EF5400BEBBB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C95767DA1510EF5400BEBBB3 /* GPSMapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSMapper-Info.plist"; sourceTree = "<group>"; };
+		C95767DC1510EF5400BEBBB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C95767DE1510EF5400BEBBB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C95767E01510EF5400BEBBB3 /* GPSMapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSMapper-Prefix.pch"; sourceTree = "<group>"; };
+		C95767E11510EF5400BEBBB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C95767E21510EF5400BEBBB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C95767E41510EF5400BEBBB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C95767E51510EF5400BEBBB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C95767E81510EF5400BEBBB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		C95767EB1510EF5400BEBBB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95767CB1510EF5400BEBBB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95767D31510EF5400BEBBB3 /* UIKit.framework in Frameworks */,
+				C95767D51510EF5400BEBBB3 /* Foundation.framework in Frameworks */,
+				C95767D71510EF5400BEBBB3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C95767C31510EF5400BEBBB3 = {
+			isa = PBXGroup;
+			children = (
+				C95767D81510EF5400BEBBB3 /* GPSMapper */,
+				C95767D11510EF5400BEBBB3 /* Frameworks */,
+				C95767CF1510EF5400BEBBB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C95767CF1510EF5400BEBBB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C95767CE1510EF5400BEBBB3 /* GPSMapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C95767D11510EF5400BEBBB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C95767D21510EF5400BEBBB3 /* UIKit.framework */,
+				C95767D41510EF5400BEBBB3 /* Foundation.framework */,
+				C95767D61510EF5400BEBBB3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C95767D81510EF5400BEBBB3 /* GPSMapper */ = {
+			isa = PBXGroup;
+			children = (
+				C95767E11510EF5400BEBBB3 /* AppDelegate.h */,
+				C95767E21510EF5400BEBBB3 /* AppDelegate.m */,
+				C95767E41510EF5400BEBBB3 /* ViewController.h */,
+				C95767E51510EF5400BEBBB3 /* ViewController.m */,
+				C95767E71510EF5400BEBBB3 /* ViewController_iPhone.xib */,
+				C95767EA1510EF5400BEBBB3 /* ViewController_iPad.xib */,
+				C95767D91510EF5400BEBBB3 /* Supporting Files */,
+			);
+			path = GPSMapper;
+			sourceTree = "<group>";
+		};
+		C95767D91510EF5400BEBBB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C95767DA1510EF5400BEBBB3 /* GPSMapper-Info.plist */,
+				C95767DB1510EF5400BEBBB3 /* InfoPlist.strings */,
+				C95767DE1510EF5400BEBBB3 /* main.m */,
+				C95767E01510EF5400BEBBB3 /* GPSMapper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C95767CD1510EF5400BEBBB3 /* GPSMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95767EF1510EF5400BEBBB3 /* Build configuration list for PBXNativeTarget "GPSMapper" */;
+			buildPhases = (
+				C95767CA1510EF5400BEBBB3 /* Sources */,
+				C95767CB1510EF5400BEBBB3 /* Frameworks */,
+				C95767CC1510EF5400BEBBB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSMapper;
+			productName = GPSMapper;
+			productReference = C95767CE1510EF5400BEBBB3 /* GPSMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C95767C51510EF5400BEBBB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C95767C81510EF5400BEBBB3 /* Build configuration list for PBXProject "GPSMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C95767C31510EF5400BEBBB3;
+			productRefGroup = C95767CF1510EF5400BEBBB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C95767CD1510EF5400BEBBB3 /* GPSMapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C95767CC1510EF5400BEBBB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95767DD1510EF5400BEBBB3 /* InfoPlist.strings in Resources */,
+				C95767E91510EF5400BEBBB3 /* ViewController_iPhone.xib in Resources */,
+				C95767EC1510EF5400BEBBB3 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95767CA1510EF5400BEBBB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95767DF1510EF5400BEBBB3 /* main.m in Sources */,
+				C95767E31510EF5400BEBBB3 /* AppDelegate.m in Sources */,
+				C95767E61510EF5400BEBBB3 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C95767DB1510EF5400BEBBB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95767DC1510EF5400BEBBB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C95767E71510EF5400BEBBB3 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95767E81510EF5400BEBBB3 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C95767EA1510EF5400BEBBB3 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95767EB1510EF5400BEBBB3 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C95767ED1510EF5400BEBBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C95767EE1510EF5400BEBBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C95767F01510EF5400BEBBB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSMapper/GPSMapper-Prefix.pch";
+				INFOPLIST_FILE = "GPSMapper/GPSMapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C95767F11510EF5400BEBBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSMapper/GPSMapper-Prefix.pch";
+				INFOPLIST_FILE = "GPSMapper/GPSMapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95767C81510EF5400BEBBB3 /* Build configuration list for PBXProject "GPSMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95767ED1510EF5400BEBBB3 /* Debug */,
+				C95767EE1510EF5400BEBBB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95767EF1510EF5400BEBBB3 /* Build configuration list for PBXNativeTarget "GPSMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95767F01510EF5400BEBBB3 /* Debug */,
+				C95767F11510EF5400BEBBB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C95767C51510EF5400BEBBB3 /* Project object */;
+}
