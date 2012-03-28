@@ -23,12 +23,18 @@
     id <GPSManagerDelegate> delegate;
     CLLocationAccuracy _hAcc;
     CLLocationAccuracy _vAcc;
+    NSLock *_fileLock;
+    
+    NSString *_fileName;
 }
 
 @property (retain, nonatomic) id <GPSManagerDelegate> delegate;
 @property (readonly) CLLocationCoordinate2D gpsCoordinate;
 @property (readonly) CLLocationAccuracy hAcc;
 @property (readonly) CLLocationAccuracy vAcc;
+@property (atomic, retain) NSLock *fileLock;
+
+@property (nonatomic, retain) NSString *fileName;
 
 + (GPSManager*)sharedInstance;
 - (void)start;

@@ -15,7 +15,9 @@ static GPSManager *sharedInstance;
 @synthesize delegate,
             gpsCoordinate=_gpsCoordinate,
             hAcc=_hAcc,
-            vAcc=_vAcc;
+            vAcc=_vAcc,
+            fileLock=_fileLock,
+            fileName=_fileName;
 
 - (id)initManager
 {
@@ -37,6 +39,10 @@ static GPSManager *sharedInstance;
 
 - (void)start
 {
+    self.fileLock = [[NSLock alloc] init];
+    self.fileName = [NSString stringWithFormat:@"%u.csv", [[NSDate date] timeIntervalSince1970]];
+    [@"lat,lng,accuracy,time" writeToFile:self.fileName atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+    
     _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     [_locationManager startUpdatingLocation];
 }
@@ -46,6 +52,20 @@ static GPSManager *sharedInstance;
     _hAcc = newLocation.horizontalAccuracy;
     _vAcc = newLocation.verticalAccuracy;
     _position = newLocation.coordinate;
+    
+//    NSLog(@"New coordinate: (%f,%f), accuracy: %f", _position.latitude, _position.longitude, _hAcc);
+    
+    NSTimeInterval theTime = [[NSDate date] timeIntervalSince1970];
+    
+    NSString *csvString = [NSString stringWithFormat:@"%f,%f,%f,%u", _position.latitude, _position.longitude, _hAcc, theTime];
+    NSLog(@"%@", csvString);
+    
+    if ([self.fileLock tryLock])
+    {
+        [csvString writeToFile:self.fileName atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+        
+        [self.fileLock unlock];
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
@@ -57,6 +77,7 @@ static GPSManager *sharedInstance;
 {
     [_locationManager release];
     [sharedInstance release];
+    [_fileLock release];
     [super dealloc];
 }
 
